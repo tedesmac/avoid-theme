@@ -75,6 +75,7 @@ nav {
 
 nav a {
   color: hsl(0, 0%, 10%);
+  margin: 0 0.5rem;
   text-decoration: none;
 }
 
