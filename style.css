@@ -30,6 +30,10 @@ article h1 {
   text-align: center;
 }
 
+article h1:hover {
+  color: #f05961 !important;
+}
+
 article .extra {
   align-items: center;
   color: hsl(0, 0%, 20%);
