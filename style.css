@@ -6,7 +6,7 @@ Description: A ultra minimalist theme
 License: GNY General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: avoid
-Version: 0.0.1
+Version: 0.0.2
 */
 
 /* TODO: Import fonts locally */
@@ -28,6 +28,10 @@ article h1 {
   font-size: 2rem;
   font-weight: normal;
   text-align: center;
+}
+
+article h1:hover {
+  color: #f05961 !important;
 }
 
 article .extra {
