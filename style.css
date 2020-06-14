@@ -6,5 +6,94 @@ Description: A ultra minimalist theme
 License: GNY General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: avoid
-Version: 0.0.0
+Version: 0.0.1
 */
+
+/* TODO: Import fonts locally */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap');
+
+a {
+  color: #f05961;
+  text-decoration: none;
+}
+
+article {
+  margin: 3rem 0;
+  width: 60vw;
+}
+
+article h1 {
+  color: hsl(0, 0%, 10%) !important;
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: normal;
+  text-align: center;
+}
+
+article .extra {
+  align-items: center;
+  color: hsl(0, 0%, 20%);
+  display: flex;
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  justify-content: space-between;
+}
+
+body {
+  background: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 10%);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 0;
+  max-width: 100%;
+  width: 100vw;
+}
+
+hr {
+  border: 1px solid hsl(0, 0%, 80%);
+  margin: 2rem 0 1rem;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+nav {
+  align-items: center;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+  width: 100%;
+}
+
+nav a {
+  color: hsl(0, 0%, 10%);
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #f05961;
+}
+
+.header {
+  background: #00a690;
+  color: hsl(0, 0%, 98%);
+  font-weight: bold;
+  padding: 4rem;
+}
+
+.header:empty {
+  display: none;
+}
+
+.highlight {
+  color: #f05961;
+}
