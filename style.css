@@ -47,6 +47,10 @@ article .extra a {
   color: hsl(0, 0%, 20%);
 }
 
+article .extra a:hover {
+  color: #f05961;
+}
+
 body {
   background: hsl(0, 0%, 98%);
   color: hsl(0, 0%, 10%);
