@@ -7,7 +7,7 @@
 
   <?php echo wp_trim_words(get_the_content(), 50); ?>
 
-  <a 
+  <a
     class="highlight"
     href="<?php the_permalink(); ?>"
     >
@@ -17,6 +17,16 @@
   <hr />
 
   <div class="extra">
-    <?php get_the_date(); ?>
+    <?php echo get_the_date(); ?>
+    <div>
+      <?php the_category(', '); ?>
+    </div>
+    <?php
+      $cn = get_comments_number();
+      $cl = '<a href="';
+      $cl .= get_comments_link();
+      $cl .= '">' . $cn . ' Comments</a>';
+      echo $cl;
+    ?>
   </div>
 </article>
