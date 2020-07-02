@@ -1,18 +1,20 @@
-<article>
+<article class="preview">
   <a href="<?php the_permalink(); ?>">
     <h1>
       <?php the_title(); ?>
     </h1>
   </a>
 
-  <?php echo wp_trim_words(get_the_content(), 50); ?>
+  <p>
+    <?php echo wp_trim_words(get_the_content(), 50); ?>
 
-  <a
-    class="highlight"
-    href="<?php the_permalink(); ?>"
-    >
-    Read More
-  </a>
+    <a
+      class="highlight"
+      href="<?php the_permalink(); ?>"
+      >
+      Read More
+    </a>
+  </p>
 
   <hr />
 

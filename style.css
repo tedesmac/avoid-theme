@@ -6,7 +6,7 @@ Description: A ultra minimalist theme
 License: GNY General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: avoid
-Version: 0.0.3
+Version: 0.0.4
 */
 
 /* TODO: Import fonts locally */
@@ -19,7 +19,6 @@ a {
 
 article {
   margin: 3rem 0;
-  width: 60vw;
 }
 
 article h1 {
@@ -28,10 +27,16 @@ article h1 {
   font-size: 2rem;
   font-weight: normal;
   text-align: center;
+  width: 600px;
 }
 
 article h1:hover {
   color: #f05961 !important;
+}
+
+article hr {
+  border: 1px solid hsl(0, 0%, 50%);
+  width: 600px;
 }
 
 article .extra {
@@ -41,6 +46,7 @@ article .extra {
   font-family: "Playfair Display", serif;
   font-size: 1rem;
   justify-content: space-between;
+  width: 600px;
 }
 
 article .extra a {
@@ -62,9 +68,23 @@ body {
   width: 100vw;
 }
 
+figcaption {
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+figure {
+  max-width: 80vw;
+}
+
 hr {
   border: 1px solid hsl(0, 0%, 80%);
   margin: 2rem 0 1rem;
+}
+
+img {
+  margin: 0 auto;
+  max-width: 80vw;
 }
 
 main {
@@ -95,6 +115,60 @@ nav a:hover {
   color: #f05961;
 }
 
+ol,
+ul {
+  width: 600px;
+}
+
+p {
+  margin: 2rem 0;
+  width: 600px;
+}
+
+.comment-form-comment {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-list {
+  list-style: none;
+  margin: 0 0 2rem;
+  width: 600px;
+}
+
+.comment-list .children {
+  border-left: 1px solid hsl(0, 0%, 50%);
+}
+
+.comment-list .depth-2 p {
+  width: 520px;
+}
+
+.comment-list .depth-3 p {
+  width: 480px;
+}
+
+.comment-list .depth-4 p {
+  width: 440px;
+}
+
+.comment-list .depth-5 p {
+  width: 400px;
+}
+
+.comment-list li {
+  margin-top: 2rem;
+}
+
+.comment-list p {
+  padding-left: 40px;
+  width: 560px;
+}
+
+.comment-list ul {
+  list-style: none;
+}
+
 .header {
   background: #00a690;
   color: hsl(0, 0%, 98%);
@@ -108,4 +182,8 @@ nav a:hover {
 
 .highlight {
   color: #f05961;
+}
+
+.preview p {
+  margin: 1rem 0 0.5rem;
 }

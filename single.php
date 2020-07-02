@@ -17,7 +17,16 @@
         </h1>
 
         <?php the_content(); ?>
+
+        <hr />
       </article>
+
+      <?php
+        if (comments_open()) {
+          comment_form();
+          comments_template();
+        }
+      ?>
     </main>
 
     <?php get_footer(); ?>
