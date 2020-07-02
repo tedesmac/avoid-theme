@@ -6,11 +6,13 @@ Description: A ultra minimalist theme
 License: GNY General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: avoid
-Version: 0.0.4
+Version: 0.0.5
 */
 
-/* TODO: Import fonts locally */
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display&display=swap");
+/* --------------------
+ * Tags
+ * --------------------
+ */
 
 a {
   color: #f05961;
@@ -25,7 +27,7 @@ article h1 {
   color: hsl(0, 0%, 10%) !important;
   font-family: "Playfair Display", serif;
   font-size: 2rem;
-  font-weight: normal;
+  font-weight: 400;
   text-align: center;
   width: 600px;
 }
@@ -62,7 +64,7 @@ body {
   color: hsl(0, 0%, 10%);
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 300;
   margin: 0;
   max-width: 100%;
   width: 100vw;
@@ -124,6 +126,11 @@ p {
   margin: 2rem 0;
   width: 600px;
 }
+
+/* --------------------
+ * es
+ * --------------------
+ */
 
 .comment-form-comment {
   display: flex;
