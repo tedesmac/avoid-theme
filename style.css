@@ -6,7 +6,7 @@ Description: A ultra minimalist theme
 License: GNY General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: avoid
-Version: 0.0.5
+Version: 0.0.6
 */
 
 /* --------------------
@@ -20,16 +20,27 @@ a {
 }
 
 article {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   margin: 3rem 0;
+}
+
+article h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  width: 600px;
+  font-weight: 400;
 }
 
 article h1 {
   color: hsl(0, 0%, 10%) !important;
-  font-family: "Playfair Display", serif;
   font-size: 2rem;
-  font-weight: 400;
-  text-align: center;
-  width: 600px;
 }
 
 article h1:hover {

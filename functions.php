@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support('post-thumbnails');
+
 wp_enqueue_style(
   'avoid-montserrat',
   get_template_directory_uri() . '/assets/css/montserrat.css'

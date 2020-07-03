@@ -5,6 +5,12 @@
     </h1>
   </a>
 
+  <?php
+    if (has_post_thumbnail()) {
+        the_post_thumbnail(array(600, 320));
+    }
+  ?>
+
   <p>
     <?php echo wp_trim_words(get_the_content(), 50); ?>
 
